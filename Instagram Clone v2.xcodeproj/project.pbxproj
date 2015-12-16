@@ -28,6 +28,8 @@
 		09F17F301C21F6D800464614 /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F17F2F1C21F6D800464614 /* UsersTableViewController.swift */; };
 		09F17F321C21FC4B00464614 /* PostImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F17F311C21FC4B00464614 /* PostImageViewController.swift */; };
 		09F17F341C220F1000464614 /* PhotoStreamCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F17F331C220F1000464614 /* PhotoStreamCellTableViewCell.swift */; };
+		09F17F361C220FF100464614 /* StreamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F17F351C220FF100464614 /* StreamTableViewController.swift */; };
+		09F17F381C2210B500464614 /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09F17F371C2210B500464614 /* dog.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		09F17F2F1C21F6D800464614 /* UsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
 		09F17F311C21FC4B00464614 /* PostImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostImageViewController.swift; sourceTree = "<group>"; };
 		09F17F331C220F1000464614 /* PhotoStreamCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoStreamCellTableViewCell.swift; sourceTree = "<group>"; };
+		09F17F351C220FF100464614 /* StreamTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamTableViewController.swift; sourceTree = "<group>"; };
+		09F17F371C2210B500464614 /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,16 +103,18 @@
 		09F17EFA1C21F15100464614 /* Instagram Clone v2 */ = {
 			isa = PBXGroup;
 			children = (
+				09F17F371C2210B500464614 /* dog.jpg */,
 				09F17EFB1C21F15100464614 /* AppDelegate.swift */,
 				09F17EFD1C21F15100464614 /* ViewController.swift */,
 				09F17F2F1C21F6D800464614 /* UsersTableViewController.swift */,
 				09F17F311C21FC4B00464614 /* PostImageViewController.swift */,
+				09F17F351C220FF100464614 /* StreamTableViewController.swift */,
+				09F17F331C220F1000464614 /* PhotoStreamCellTableViewCell.swift */,
 				09F17EFF1C21F15100464614 /* Main.storyboard */,
 				09F17F051C21F15100464614 /* Assets.xcassets */,
 				09F17F071C21F15100464614 /* LaunchScreen.storyboard */,
 				09F17F0A1C21F15100464614 /* Info.plist */,
 				09F17F021C21F15100464614 /* Instagram_Clone_v2.xcdatamodeld */,
-				09F17F331C220F1000464614 /* PhotoStreamCellTableViewCell.swift */,
 			);
 			path = "Instagram Clone v2";
 			sourceTree = "<group>";
@@ -190,6 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F17F381C2210B500464614 /* dog.jpg in Resources */,
 				09F17F091C21F15100464614 /* LaunchScreen.storyboard in Resources */,
 				09F17F061C21F15100464614 /* Assets.xcassets in Resources */,
 				09F17F011C21F15100464614 /* Main.storyboard in Resources */,
@@ -203,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F17F361C220FF100464614 /* StreamTableViewController.swift in Sources */,
 				09F17F341C220F1000464614 /* PhotoStreamCellTableViewCell.swift in Sources */,
 				09F17F321C21FC4B00464614 /* PostImageViewController.swift in Sources */,
 				09F17EFE1C21F15100464614 /* ViewController.swift in Sources */,

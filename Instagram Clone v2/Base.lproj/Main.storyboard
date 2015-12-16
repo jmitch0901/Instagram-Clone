@@ -106,13 +106,13 @@
         <!--Your Feed-->
         <scene sceneID="ig0-PE-hy3">
             <objects>
-                <tableViewController title="Your Feed" id="i3Z-pY-VJm" sceneMemberID="viewController">
+                <tableViewController title="Your Feed" id="i3Z-pY-VJm" customClass="StreamTableViewController" customModule="Instagram_Clone_v2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="270" sectionHeaderHeight="28" sectionFooterHeight="28" id="Dy8-70-mhB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="270" id="eGL-Wf-v8b">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="streamCell" rowHeight="270" id="eGL-Wf-v8b" customClass="PhotoStreamCellTableViewCell" customModule="Instagram_Clone_v2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="375" height="270"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eGL-Wf-v8b" id="PgV-N0-j4C">
@@ -152,6 +152,11 @@
                                         <constraint firstItem="Zpg-iy-zGc" firstAttribute="top" secondItem="xju-JX-Fku" secondAttribute="bottom" constant="13" id="qhu-nT-lLJ"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imageViewCell" destination="phu-3O-kjq" id="4hz-Ra-InJ"/>
+                                    <outlet property="message" destination="Zpg-iy-zGc" id="ghj-Lw-Lb0"/>
+                                    <outlet property="userName" destination="xju-JX-Fku" id="QnZ-Ws-DT3"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

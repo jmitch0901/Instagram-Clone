@@ -10,15 +10,14 @@ import UIKit
 
 class PhotoStreamCellTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
 
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+    @IBOutlet weak var imageViewCell: UIImageView!
+    @IBOutlet weak var userName: UILabel!
+    @IBOutlet weak var message: UILabel!
+    
+    
+    
+    
+    
 
 }
