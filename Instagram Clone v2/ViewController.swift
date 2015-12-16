@@ -8,9 +8,6 @@
 
 
 
-
-
-
 import UIKit
 import Parse
 
@@ -33,7 +30,7 @@ class ViewController: UIViewController {
     var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
     
     func initialize(){
-        activityIndicator = UIActivityIndicatorView(frame: CGRectMake(0,0,50,50))
+        activityIndicator = UIActivityIndicatorView(frame: self.view.frame)
         activityIndicator.center = self.view.center
         activityIndicator.hidesWhenStopped = true
         activityIndicator.activityIndicatorViewStyle = .Gray

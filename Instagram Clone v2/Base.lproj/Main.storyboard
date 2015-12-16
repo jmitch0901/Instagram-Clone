@@ -103,6 +103,68 @@
             </objects>
             <point key="canvasLocation" x="-160.5" y="452.5"/>
         </scene>
+        <!--Your Feed-->
+        <scene sceneID="ig0-PE-hy3">
+            <objects>
+                <tableViewController title="Your Feed" id="i3Z-pY-VJm" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="270" sectionHeaderHeight="28" sectionFooterHeight="28" id="Dy8-70-mhB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="270" id="eGL-Wf-v8b">
+                                <rect key="frame" x="0.0" y="92" width="375" height="270"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eGL-Wf-v8b" id="PgV-N0-j4C">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="269.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="phu-3O-kjq">
+                                            <rect key="frame" x="32" y="0.0" width="310" height="186"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xju-JX-Fku">
+                                            <rect key="frame" x="8" y="194" width="359" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zpg-iy-zGc">
+                                            <rect key="frame" x="8" y="228" width="359" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="phu-3O-kjq" firstAttribute="top" secondItem="PgV-N0-j4C" secondAttribute="topMargin" constant="-8" id="00m-XS-UnG"/>
+                                        <constraint firstItem="Zpg-iy-zGc" firstAttribute="trailing" secondItem="PgV-N0-j4C" secondAttribute="trailingMargin" id="0dT-wQ-g7y"/>
+                                        <constraint firstItem="xju-JX-Fku" firstAttribute="trailing" secondItem="PgV-N0-j4C" secondAttribute="trailingMargin" id="5qq-tU-tmn"/>
+                                        <constraint firstItem="xju-JX-Fku" firstAttribute="leading" secondItem="PgV-N0-j4C" secondAttribute="leadingMargin" id="AsS-Th-Q9C"/>
+                                        <constraint firstItem="Zpg-iy-zGc" firstAttribute="centerX" secondItem="PgV-N0-j4C" secondAttribute="centerX" id="BRf-fq-xJJ"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Zpg-iy-zGc" secondAttribute="bottom" constant="12.5" id="F8b-Wa-Bg8"/>
+                                        <constraint firstItem="Zpg-iy-zGc" firstAttribute="top" secondItem="xju-JX-Fku" secondAttribute="bottom" constant="13" id="Gqb-qp-StP"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="phu-3O-kjq" secondAttribute="trailing" constant="25" id="T8G-t9-GdE"/>
+                                        <constraint firstItem="xju-JX-Fku" firstAttribute="top" secondItem="phu-3O-kjq" secondAttribute="bottom" constant="8" id="XW1-ch-Fvm"/>
+                                        <constraint firstItem="xju-JX-Fku" firstAttribute="top" secondItem="phu-3O-kjq" secondAttribute="bottom" constant="8" id="YNb-e1-qCo"/>
+                                        <constraint firstItem="phu-3O-kjq" firstAttribute="leading" secondItem="PgV-N0-j4C" secondAttribute="leadingMargin" constant="24" id="Yhf-1f-ELe"/>
+                                        <constraint firstItem="xju-JX-Fku" firstAttribute="centerX" secondItem="PgV-N0-j4C" secondAttribute="centerX" id="YwP-U6-b2o"/>
+                                        <constraint firstItem="Zpg-iy-zGc" firstAttribute="leading" secondItem="PgV-N0-j4C" secondAttribute="leadingMargin" id="lLp-ZM-sXb"/>
+                                        <constraint firstItem="Zpg-iy-zGc" firstAttribute="top" secondItem="xju-JX-Fku" secondAttribute="bottom" constant="13" id="qhu-nT-lLJ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="i3Z-pY-VJm" id="F6s-hG-Lbi"/>
+                            <outlet property="delegate" destination="i3Z-pY-VJm" id="6Xu-Jp-DAA"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8I3-M5-IxH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773.5" y="-304.5"/>
+        </scene>
         <!--User List-->
         <scene sceneID="O0U-dd-cBY">
             <objects>
@@ -127,6 +189,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="User List" id="KtL-p8-HfJ">
+                        <barButtonItem key="leftBarButtonItem" title="Feed" id="Nxo-yA-OQY">
+                            <connections>
+                                <segue destination="i3Z-pY-VJm" kind="show" id="3Te-eC-FZ4"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Upload" id="P3I-Ub-eeU">
                             <connections>
                                 <segue destination="5wE-wR-UfU" kind="show" id="SNO-Bu-BNG"/>
@@ -141,7 +208,7 @@
         <!--Post Image-->
         <scene sceneID="jCh-6o-cbC">
             <objects>
-                <viewController title="Post Image" id="5wE-wR-UfU" sceneMemberID="viewController">
+                <viewController title="Post Image" id="5wE-wR-UfU" customClass="PostImageViewController" customModule="Instagram_Clone_v2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MSM-84-gg4"/>
                         <viewControllerLayoutGuide type="bottom" id="gjV-ah-fDf"/>
@@ -166,6 +233,9 @@
                                     <constraint firstAttribute="width" constant="119" id="9pI-zU-p4J"/>
                                 </constraints>
                                 <state key="normal" title="Choose an Image"/>
+                                <connections>
+                                    <action selector="chooseImage:" destination="5wE-wR-UfU" eventType="touchUpInside" id="qC9-6u-Uiw"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="buW-3N-oTU">
                                 <rect key="frame" x="20" y="390" width="335" height="30"/>
@@ -183,6 +253,9 @@
                                     <constraint firstAttribute="width" constant="50" id="sDc-za-qXb"/>
                                 </constraints>
                                 <state key="normal" title="Upload"/>
+                                <connections>
+                                    <action selector="upload:" destination="5wE-wR-UfU" eventType="touchUpInside" id="IcL-Fw-IhJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -200,6 +273,10 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imageToPost" destination="yyO-yJ-aD5" id="cJ0-nD-tdc"/>
+                        <outlet property="message" destination="buW-3N-oTU" id="20U-CF-0LR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9oX-Uc-mXw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

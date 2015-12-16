@@ -26,6 +26,8 @@
 		09F17F2C1C21F2E000464614 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F17F2B1C21F2E000464614 /* libz.tbd */; };
 		09F17F2E1C21F2E800464614 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F17F2D1C21F2E800464614 /* libsqlite3.tbd */; };
 		09F17F301C21F6D800464614 /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F17F2F1C21F6D800464614 /* UsersTableViewController.swift */; };
+		09F17F321C21FC4B00464614 /* PostImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F17F311C21FC4B00464614 /* PostImageViewController.swift */; };
+		09F17F341C220F1000464614 /* PhotoStreamCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F17F331C220F1000464614 /* PhotoStreamCellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		09F17F2B1C21F2E000464614 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		09F17F2D1C21F2E800464614 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		09F17F2F1C21F6D800464614 /* UsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
+		09F17F311C21FC4B00464614 /* PostImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostImageViewController.swift; sourceTree = "<group>"; };
+		09F17F331C220F1000464614 /* PhotoStreamCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoStreamCellTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 				09F17EFB1C21F15100464614 /* AppDelegate.swift */,
 				09F17EFD1C21F15100464614 /* ViewController.swift */,
 				09F17F2F1C21F6D800464614 /* UsersTableViewController.swift */,
+				09F17F311C21FC4B00464614 /* PostImageViewController.swift */,
 				09F17EFF1C21F15100464614 /* Main.storyboard */,
 				09F17F051C21F15100464614 /* Assets.xcassets */,
 				09F17F071C21F15100464614 /* LaunchScreen.storyboard */,
 				09F17F0A1C21F15100464614 /* Info.plist */,
 				09F17F021C21F15100464614 /* Instagram_Clone_v2.xcdatamodeld */,
+				09F17F331C220F1000464614 /* PhotoStreamCellTableViewCell.swift */,
 			);
 			path = "Instagram Clone v2";
 			sourceTree = "<group>";
@@ -197,6 +203,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F17F341C220F1000464614 /* PhotoStreamCellTableViewCell.swift in Sources */,
+				09F17F321C21FC4B00464614 /* PostImageViewController.swift in Sources */,
 				09F17EFE1C21F15100464614 /* ViewController.swift in Sources */,
 				09F17F041C21F15100464614 /* Instagram_Clone_v2.xcdatamodeld in Sources */,
 				09F17F301C21F6D800464614 /* UsersTableViewController.swift in Sources */,
