@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -125,11 +126,84 @@
                             <outlet property="delegate" destination="C1e-C3-s9P" id="2I7-64-7h9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="User List" id="zzS-S8-EK2"/>
+                    <navigationItem key="navigationItem" title="User List" id="KtL-p8-HfJ">
+                        <barButtonItem key="rightBarButtonItem" title="Upload" id="P3I-Ub-eeU">
+                            <connections>
+                                <segue destination="5wE-wR-UfU" kind="show" id="SNO-Bu-BNG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ffO-nh-4sN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="773.5" y="452.5"/>
+        </scene>
+        <!--Post Image-->
+        <scene sceneID="jCh-6o-cbC">
+            <objects>
+                <viewController title="Post Image" id="5wE-wR-UfU" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MSM-84-gg4"/>
+                        <viewControllerLayoutGuide type="bottom" id="gjV-ah-fDf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qDN-zm-cE4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yyO-yJ-aD5">
+                                <rect key="frame" x="20" y="72" width="335" height="272"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="335" id="6G5-zP-CkO"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="335" id="cgf-zp-WgW"/>
+                                    <constraint firstAttribute="height" constant="272" id="cjP-Q9-wDt"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="272" id="dxm-pZ-BK1"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SbB-Lj-g4u">
+                                <rect key="frame" x="128" y="352" width="119" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3Xo-Q7-UHv"/>
+                                    <constraint firstAttribute="width" constant="119" id="9pI-zU-p4J"/>
+                                </constraints>
+                                <state key="normal" title="Choose an Image"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="buW-3N-oTU">
+                                <rect key="frame" x="20" y="390" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="CDK-el-3WA"/>
+                                    <constraint firstAttribute="height" constant="30" id="N2c-2B-GBH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Y1-ki-966">
+                                <rect key="frame" x="162" y="428" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="khk-jk-ZjY"/>
+                                    <constraint firstAttribute="width" constant="50" id="sDc-za-qXb"/>
+                                </constraints>
+                                <state key="normal" title="Upload"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="buW-3N-oTU" firstAttribute="trailing" secondItem="qDN-zm-cE4" secondAttribute="trailingMargin" id="6pK-2J-Z6F"/>
+                            <constraint firstItem="buW-3N-oTU" firstAttribute="centerX" secondItem="qDN-zm-cE4" secondAttribute="centerX" id="Mmf-DR-tr5"/>
+                            <constraint firstItem="SbB-Lj-g4u" firstAttribute="top" secondItem="yyO-yJ-aD5" secondAttribute="bottom" constant="8" id="Tje-qp-tWf"/>
+                            <constraint firstItem="SbB-Lj-g4u" firstAttribute="centerX" secondItem="qDN-zm-cE4" secondAttribute="centerX" id="YaG-iK-6zO"/>
+                            <constraint firstItem="yyO-yJ-aD5" firstAttribute="top" secondItem="MSM-84-gg4" secondAttribute="bottom" constant="8" id="aC4-NU-VQz"/>
+                            <constraint firstItem="6Y1-ki-966" firstAttribute="centerX" secondItem="qDN-zm-cE4" secondAttribute="centerX" id="aUX-VC-LUk"/>
+                            <constraint firstItem="buW-3N-oTU" firstAttribute="leading" secondItem="qDN-zm-cE4" secondAttribute="leadingMargin" id="d2b-lR-cHL"/>
+                            <constraint firstItem="buW-3N-oTU" firstAttribute="top" secondItem="SbB-Lj-g4u" secondAttribute="bottom" constant="8" id="mzJ-Jc-NAn"/>
+                            <constraint firstItem="yyO-yJ-aD5" firstAttribute="centerX" secondItem="qDN-zm-cE4" secondAttribute="centerX" id="qnp-gK-Iyt"/>
+                            <constraint firstItem="6Y1-ki-966" firstAttribute="top" secondItem="buW-3N-oTU" secondAttribute="bottom" constant="8" id="rqT-G8-kL4"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9oX-Uc-mXw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1235.5" y="452.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bcB-o7-eb3">
@@ -146,7 +220,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vaO-Th-pyJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="317.5" y="452.5"/>
+            <point key="canvasLocation" x="306.5" y="452.5"/>
         </scene>
     </scenes>
 </document>
