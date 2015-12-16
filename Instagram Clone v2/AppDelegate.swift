@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import Parse
+import Bolts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +19,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        Parse.enableLocalDatastore()
+        
+        // Initialize Parse.
+        Parse.setApplicationId("sI4dmLbGqI409YWvqNEnY9rPQgPfya5Iv1n0eSlm",
+            clientKey: "AraRkpefJ71HhFTvSL6aTS8AwNfLxOwvnxbVbB1E")
+        
+        // [Optional] Track statistics around application opens.
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        
+        PFUser.enableAutomaticUser()
+        
+        let defaultACL = PFACL();
+        
+        // If you would like all objects to be private by default, remove this line.
+        defaultACL.publicReadAccess = true
+        
+        PFACL.setDefaultACL(defaultACL, withAccessForCurrentUser:true)
+        
+        if application.applicationState != UIApplicationState.Background {
+            // Track an app open here if we launch with a push, unless
+            // "content_available" was used to trigger a background push (introduced in iOS 7).
+            // In that case, we skip tracking here to avoid double counting the app-open.
+            
+            let preBackgroundPush = !application.respondsToSelector("backgroundRefreshStatus")
+            let oldPushHandlerOnly = !self.respondsToSelector("application:didReceiveRemoteNotification:fetchCompletionHandler:")
+            var noPushPayload = false;
+            if let options = launchOptions {
+                noPushPayload = options[UIApplicationLaunchOptionsRemoteNotificationKey] != nil;
+            }
+            if (preBackgroundPush || oldPushHandlerOnly || noPushPayload) {
+                PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+            }
+        }
+
         return true
     }
 
