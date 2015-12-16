@@ -30,6 +30,7 @@
 		09F17F341C220F1000464614 /* PhotoStreamCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F17F331C220F1000464614 /* PhotoStreamCellTableViewCell.swift */; };
 		09F17F361C220FF100464614 /* StreamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F17F351C220FF100464614 /* StreamTableViewController.swift */; };
 		09F17F381C2210B500464614 /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09F17F371C2210B500464614 /* dog.jpg */; };
+		09F17F3A1C22146F00464614 /* QueriedStreamUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F17F391C22146F00464614 /* QueriedStreamUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		09F17F331C220F1000464614 /* PhotoStreamCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoStreamCellTableViewCell.swift; sourceTree = "<group>"; };
 		09F17F351C220FF100464614 /* StreamTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamTableViewController.swift; sourceTree = "<group>"; };
 		09F17F371C2210B500464614 /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpg; sourceTree = "<group>"; };
+		09F17F391C22146F00464614 /* QueriedStreamUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueriedStreamUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				09F17F311C21FC4B00464614 /* PostImageViewController.swift */,
 				09F17F351C220FF100464614 /* StreamTableViewController.swift */,
 				09F17F331C220F1000464614 /* PhotoStreamCellTableViewCell.swift */,
+				09F17F391C22146F00464614 /* QueriedStreamUser.swift */,
 				09F17EFF1C21F15100464614 /* Main.storyboard */,
 				09F17F051C21F15100464614 /* Assets.xcassets */,
 				09F17F071C21F15100464614 /* LaunchScreen.storyboard */,
@@ -214,6 +217,7 @@
 				09F17F341C220F1000464614 /* PhotoStreamCellTableViewCell.swift in Sources */,
 				09F17F321C21FC4B00464614 /* PostImageViewController.swift in Sources */,
 				09F17EFE1C21F15100464614 /* ViewController.swift in Sources */,
+				09F17F3A1C22146F00464614 /* QueriedStreamUser.swift in Sources */,
 				09F17F041C21F15100464614 /* Instagram_Clone_v2.xcdatamodeld in Sources */,
 				09F17F301C21F6D800464614 /* UsersTableViewController.swift in Sources */,
 				09F17EFC1C21F15100464614 /* AppDelegate.swift in Sources */,
