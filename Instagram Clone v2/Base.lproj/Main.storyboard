@@ -100,9 +100,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-355.5" y="459.5"/>
+            <point key="canvasLocation" x="-160.5" y="452.5"/>
         </scene>
-        <!--Root View Controller-->
+        <!--User List-->
         <scene sceneID="O0U-dd-cBY">
             <objects>
                 <tableViewController id="C1e-C3-s9P" customClass="UsersTableViewController" customModule="Instagram_Clone_v2" customModuleProvider="target" sceneMemberID="viewController">
@@ -125,7 +125,7 @@
                             <outlet property="delegate" destination="C1e-C3-s9P" id="2I7-64-7h9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="zzS-S8-EK2"/>
+                    <navigationItem key="navigationItem" title="User List" id="zzS-S8-EK2"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ffO-nh-4sN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -146,7 +146,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vaO-Th-pyJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="278" y="453"/>
+            <point key="canvasLocation" x="317.5" y="452.5"/>
         </scene>
     </scenes>
 </document>

@@ -154,10 +154,10 @@ class ViewController: UIViewController {
     //Segues dont exist on viewdidLoad
     override func viewDidAppear(animated: Bool) {
         
-        /*if PFUser.currentUser() != nil{
+        if PFUser.currentUser() != nil{
             print("Loging in with previous logged in user!")
             self.performSegueWithIdentifier("loginSegue", sender: self)
-        }*/
+        }
         
     }
     
